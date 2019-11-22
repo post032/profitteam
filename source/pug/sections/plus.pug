@@ -1,0 +1,25 @@
+div.wrapper
+  section.plus
+    h2.plus__title Плюсы работы с нами
+    ul.plus__lists
+      li.plus__list 
+        p Низкая стоимость часа работы<br> 1700 рублей в час
+      li.plus__list
+        p Быстрые сроки выполнения
+      li.plus__list
+        p Общаться можно напрямую с программистом либо с<br> грамотным менеджером
+      li.plus__list
+        p Минимальная бумажная волокита
+  form(action="index.html" method="post").form
+    h2.form__title ЗАКАЗАТЬ ЗВОНОК
+    div.form__block
+      label(for="name").form__label Ваше имя
+      input(type="text" id="name" required).form__input
+      label(for="phone").form__label Ваш телефон
+      input(type="text" id="phone" required).form__input
+      label(for="time").form__label Удобное время для звонка по Мск
+      input(id="time" type="text").form__time
+    div.form__submit
+      input(type="submit" value="ЗАКАЗАТЬ")
+      p.form__ok Нажав на кнопку «Отправить» я даю согласие на 
+        a(href="#") обработку персональных данных

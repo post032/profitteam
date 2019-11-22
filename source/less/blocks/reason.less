@@ -1,0 +1,156 @@
+.reason {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.reason__title {
+  color: #E20023;
+  font-size: 34px;
+  line-height: 34px;
+  font-weight: normal;
+}
+
+.reason__lists {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.reason__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.reason__img1 {
+  width: 127px;
+}
+
+.reason__img2 {
+  width: 152px;
+}
+
+.reason__img3 {
+  width: 161px;
+}
+
+.reason__img4 {
+  width: 138px;
+}
+
+.reason__img5 {
+  width: 290px;
+}
+
+.reason__text {
+  color: #3B3B3A;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 8px;
+}
+
+@media (min-width: 425px) {
+  .reason__img:last-child {
+    width: 317px;
+  }
+
+}
+@media (min-width: @size-tablet) {
+  .reason__lists {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .reason__list {
+    width: 340px;
+  }
+
+  .reason__list:last-child {
+    width: 520px;
+    margin-top: 22px;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: @size-desktop) {
+  .reason {
+    margin: 0;
+    align-items: flex-start;
+  }
+
+  .reason__list {
+    width: 400px;
+    margin-top: 4px;
+    margin-bottom: 30px;
+  }
+
+  .reason__title {
+    margin-top: 70px;
+  }
+
+  .reason__list:last-child::before,
+  .reason__list:nth-child(3)::before,
+  .reason__list:nth-child(4)::before,
+  .reason__list:nth-child(2)::before,
+  .reason__list:nth-child(2)::after,
+  .reason__title::before,
+  .reason__title::after {
+    content: "";
+    display: block;
+    height: 19px;
+    background: #ECECED;
+    border-radius: 30px;
+    border: none;
+    position: absolute;
+  }
+
+  .reason__title::before {
+    width: 382px;
+    top: 23px;
+    left: 52px;
+  }
+
+  .reason__title::after {
+    width: 357px;
+    top: 23px;
+    right: -6px;
+  }
+
+  .reason__list:nth-child(2)::before {
+    width: 234px;
+    top: -74px;
+    right: -18px;
+  }
+
+  .reason__list:nth-child(2)::after {
+    width: 178px;
+    top: -29px;
+    right: -18px;
+  }
+
+  .reason__list:last-child::before {
+    width: 441px;
+    top: -42px;
+    right: 30px;
+  }
+  .reason__list:nth-child(3)::before {
+    width: 357px;
+    top: -42px;
+    left: 18px;
+  }
+  .reason__list:nth-child(4)::before {
+    width: 357px;
+    top: -42px;
+    right: -18px;
+  }
+}
